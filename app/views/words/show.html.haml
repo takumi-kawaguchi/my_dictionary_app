@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @word.name
+%p
+  %b Checked count:
+  = @word.checked_count
+
+= link_to 'Edit', edit_word_path(@word)
+\|
+= link_to 'Back', words_path
